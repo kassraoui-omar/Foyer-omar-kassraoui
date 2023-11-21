@@ -12,6 +12,7 @@ import java.util.Set;
 @Data
 @Table(name="Chambre")
 public class Chambre implements Serializable {
+
     @Id
     @Column(name="idChambre")
     @GeneratedValue(strategy =GenerationType.IDENTITY)//auto increment
