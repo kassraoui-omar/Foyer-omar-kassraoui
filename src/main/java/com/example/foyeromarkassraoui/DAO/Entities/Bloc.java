@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -24,4 +23,8 @@ public class Bloc implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy="bloc")
     private Set<Chambre> chambres;
+
+    public Bloc getIdBloc() {
+        return idBloc;
+    }
 }

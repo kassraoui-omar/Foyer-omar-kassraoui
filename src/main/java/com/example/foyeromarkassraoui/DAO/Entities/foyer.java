@@ -22,6 +22,6 @@ public class foyer implements Serializable {
     @OneToOne
     private Universelle universelle;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy="entreprise")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy="f")
     private Set<Bloc> blocs;
 }
