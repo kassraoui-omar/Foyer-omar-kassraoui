@@ -26,7 +26,7 @@ public class BlockRestController {
 
     @DeleteMapping("DeleteBlock/{id}")
     public void deleteBlock(@PathVariable Bloc b) {
-        blocService.deleteBloc(b.getIdBloc());
+        blocService.deleteBlocById(b.getIdBloc());
     }
 
     @PutMapping("UpdateBlock")

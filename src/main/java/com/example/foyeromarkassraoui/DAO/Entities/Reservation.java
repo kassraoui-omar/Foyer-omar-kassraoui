@@ -19,6 +19,7 @@ public class Reservation implements Serializable {
     private long idReservation;
     private long numeroChambre;
     private Date anneUniversitaire;
+private boolean estValide;
 
     @ManyToMany(mappedBy="reservations",cascade = CascadeType.ALL)
     private Set<Etudiant> etudiants;

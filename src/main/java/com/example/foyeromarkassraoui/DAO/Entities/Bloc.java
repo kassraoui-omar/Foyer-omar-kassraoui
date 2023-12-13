@@ -24,7 +24,7 @@ public class Bloc implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy="bloc")
     private Set<Chambre> chambres;
 
-    public Bloc getIdBloc() {
+    public long getIdBloc() {
         return idBloc;
     }
 }

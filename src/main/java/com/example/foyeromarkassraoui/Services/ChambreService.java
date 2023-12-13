@@ -45,11 +45,11 @@ public class ChambreService implements ChambreInterface{
 
     @Override
     public void deleteChambre(Chambre c) {
-
+chambreRepository.delete(c);
     }
 
     @Override
     public void deleteChambreById(long id) {
-
+chambreRepository.deleteById(id);
     }
 }
